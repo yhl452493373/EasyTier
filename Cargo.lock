@@ -3,6 +3,39 @@
 version = 4
 
 [[package]]
+name = "EasyTier"
+version = "2.6.4"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "chrono",
+ "dashmap",
+ "dunce",
+ "easytier",
+ "gethostname 1.1.0",
+ "libc",
+ "once_cell",
+ "security-framework-sys",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-clipboard-manager",
+ "tauri-plugin-os",
+ "tauri-plugin-positioner",
+ "tauri-plugin-process",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-vpnservice",
+ "thunk-rs",
+ "tokio",
+ "url",
+ "uuid",
+ "winapi",
+ "windows 0.52.0",
+]
+
+[[package]]
 name = "ab_glyph_rasterizer"
 version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2402,39 +2435,6 @@ dependencies = [
  "serde",
  "serde_json",
  "uuid",
-]
-
-[[package]]
-name = "easytier-gui"
-version = "2.6.4"
-dependencies = [
- "anyhow",
- "async-trait",
- "chrono",
- "dashmap",
- "dunce",
- "easytier",
- "gethostname 1.1.0",
- "libc",
- "once_cell",
- "security-framework-sys",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-clipboard-manager",
- "tauri-plugin-os",
- "tauri-plugin-positioner",
- "tauri-plugin-process",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-vpnservice",
- "thunk-rs",
- "tokio",
- "url",
- "uuid",
- "winapi",
- "windows 0.52.0",
 ]
 
 [[package]]

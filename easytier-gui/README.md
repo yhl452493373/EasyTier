@@ -27,6 +27,12 @@ pnpm install
 pnpm tauri build
 ```
 
+macOS额外步骤
+```
+export SDKROOT=$(xcrun --show-sdk-path)
+export BINDGEN_EXTRA_CLANG_ARGS="--sysroot=$SDKROOT -isysroot $SDKROOT"
+```
+
 ### For Android
 
 Need to install android SDK / emulator / NDK / Java (easy with android studio)
@@ -51,4 +57,11 @@ See [Gradle compatibility matrix](https://docs.gradle.org/current/userguide/comp
 pnpm install
 pnpm tauri android init
 pnpm tauri android build
+```
+
+macOS编译android额外步骤
+```
+unset SDKROOT
+unset BINDGEN_EXTRA_CLANG_ARGS
+unset CFLAGS
 ```
